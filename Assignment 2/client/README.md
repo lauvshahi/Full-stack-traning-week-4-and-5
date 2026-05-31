@@ -1,16 +1,29 @@
-# React + Vite
+📌 1. Repository Link https://github.com/lauvshahi/ull-stack-traning-week-4-and-5
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🌐 2. Netlify Frontend URL https://6a1c2b82129c478cbf826613--spectacular-kataifi-16b42b.netlify.app/
 
-Currently, two official plugins are available:
+🐳 3. Docker Setup (Client) 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Build Image
+docker build -t meeting-client .
+Run Container
+docker run -p 8080:80 meeting-client
+Access App
+http://localhost:8080
 
-## React Compiler
+🌐 4. Netlify Deployment Settings
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Build Command: npm run build
+Publish Directory: dist
+SPA Fix: _redirects file added
+/* /index.html 200
 
-## Expanding the ESLint configuration
+🧠5. Architecture Summary
+Context API → user/session state
+Zustand → meetings global state
+Local state → UI inputs
+Derived state → upcoming meetings count
+Express API → backend (if used)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+<img width="552" height="361" alt="Screenshot 2026-05-31 183936" src="https://github.com/user-attachments/assets/6f4a86c8-5f2b-4a21-872a-18fbc1cad896" />
+
