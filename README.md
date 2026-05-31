@@ -32,4 +32,38 @@ Routes:
 Controller handles logic
 REST API structure
 
+🧠 6. REQUIRED README NOTE (Context vs Global Store)
+## State Management Decision
+
+### Context API
+Used for:
+- User info
+- Theme
+- Session state
+
+Reason:
+These values are global but not frequently updated.
+
+---
+
+### Zustand Global Store
+Used for:
+- Meetings data
+- Add / delete / update meetings
+- Derived state (upcoming meetings count)
+
+Reason:
+Meetings are shared across multiple components and change frequently.
+
+---
+
+### Local State
+Used for:
+- Input fields
+- UI toggles
+- Temporary filters
+
+Reason:
+Keeps UI responsive and avoids unnecessary global complexity.
+
 
