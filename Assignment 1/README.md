@@ -66,4 +66,7 @@ Used for:
 Reason:
 Keeps UI responsive and avoids unnecessary global complexity.
 
+<img width="416" height="513" alt="Screenshot 2026-05-31 152732" src="https://github.com/user-attachments/assets/2630674b-37ac-42fb-9696-2795a8969e37" />
+<img width="541" height="287" alt="Screenshot 2026-05-31 153016" src="https://github.com/user-attachments/assets/1303f0d2-601c-4d63-adbd-a9cca5beba2d" />
+
 
